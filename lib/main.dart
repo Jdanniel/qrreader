@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qrreader/src/pages/despliegue_mapa.dart';
 
 import 'package:qrreader/src/pages/home_page.dart';
  
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
       title: 'QRReader',
       initialRoute: 'home',
       routes: {
-        'home': (BuildContext context) => HomePage()
+        'home': (BuildContext context) => HomePage(),
+        'mapa': (BuildContext context) => DespliegueMapaPage(),
       }, 
       theme: ThemeData(
         primaryColor: Colors.deepPurple
