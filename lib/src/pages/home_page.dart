@@ -51,9 +51,6 @@ class _HomePageState extends State<HomePage> {
 
     //geo:40.764810317804454,-73.78896131953127
 
-    String futureString = "https://google.com.mx";
-
-    /*
       String futureString = "";
 
       try{
@@ -62,14 +59,10 @@ class _HomePageState extends State<HomePage> {
         futureString = e.toString();
       }
 
-      print('futureString: $futureString');
-*/
       if(futureString != null){
+        
         final scan = ScanModel(valor: futureString);
         scansbloc.agregarScan(scan);
-
-        final scan2 = ScanModel(valor: 'geo:40.764810317804454,-73.78896131953127');
-        scansbloc.agregarScan(scan2);
 
         if(Platform.isIOS){
           Future.delayed(Duration(milliseconds: 750),(){
